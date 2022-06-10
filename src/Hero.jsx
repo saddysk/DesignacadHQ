@@ -186,6 +186,6 @@ const Input = styled.input`
   padding: 8px;
   border-radius: 6px;
   max-width: 250px;
-  height: 100%;
+  height: 40px;
 `;
 export default Hero;
