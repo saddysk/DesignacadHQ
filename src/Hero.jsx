@@ -35,22 +35,18 @@ const Hero = () => {
           )}
         </SubscrptionForm> */}
 
-        <div id="revue-embed">
-          <SubscrptionForm action="https://www.getrevue.co/profile/designacadhq/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
-            <div class="revue-form-group">
-              <Input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
-            </div>
-            <div class="revue-form-actions">
-              <Button type="submit" name="member[subscribe]" id="member_submit" style={{ cursor: "pointer" }}>Submit</Button>
-            </div>
-            {width > 995 && (
-              <Subtext>
-                Subcribe to get weekly updates, design <br /> assignments &
-                freebies.
-              </Subtext>
-            )}
-          </SubscrptionForm>
-        </div>
+
+        <SubscrptionForm action="https://www.getrevue.co/profile/designacadhq/add_subscriber" method="post" name="revue-form" target="_blank">
+          <Input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" />
+          <Button type="submit" name="member[subscribe]" style={{ cursor: "pointer" }}>Submit</Button>
+          {width > 995 && (
+            <Subtext>
+              Subcribe to get weekly updates, design <br /> assignments &
+              freebies.
+            </Subtext>
+          )}
+        </SubscrptionForm>
+
         {width < 995 && (
           <Subtext>
             Subcribe to get weekly updates, design assignments & freebies.
