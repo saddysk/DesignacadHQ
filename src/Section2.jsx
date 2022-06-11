@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import { BasicUrl, DesignerStoryUrl, InformationArchitectureUrl, ResearchUrl, UxPatternsUrl, VisualDesignUrl } from "./Links";
 const Section2 = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
 
@@ -16,28 +17,28 @@ const Section2 = () => {
         <br /> curated course
       </SubHeading>
       <CardContainer>
-        <Card>
+        <Card href={BasicUrl} target="_blank">
           <Subtext>01.</Subtext>
           <CardHeading>Basics</CardHeading>
         </Card>
-        <Card>
+        <Card href={DesignerStoryUrl} target="_blank">
           <Subtext>02.</Subtext>
           <CardHeading>Designer's Story</CardHeading>
         </Card>
-        <Card>
+        <Card href={VisualDesignUrl} target="_blank">
           <Subtext>03.</Subtext>
           <CardHeading>Visual Design</CardHeading>
         </Card>
-        <Card>
+        <Card href={ResearchUrl} target="_blank">
           <Subtext>04. Coming Soon</Subtext>
           <CardHeading>Research</CardHeading>
         </Card>
-        <Card gridColumn={width > 995 && "1/3"}>
-          <Subtext>04. Coming Soon</Subtext>
+        <Card gridColumn={width > 995 && "1/3"} href={InformationArchitectureUrl} target="_blank">
+          <Subtext>05. Coming Soon</Subtext>
           <CardHeading>Information Architecture</CardHeading>
         </Card>
-        <Card gridColumn={width > 995 && "3/5"}>
-          <Subtext>04. Coming Soon</Subtext>
+        <Card gridColumn={width > 995 && "3/5"} href={UxPatternsUrl} target="_blank">
+          <Subtext>06. Coming Soon</Subtext>
           <CardHeading>UX Patterns</CardHeading>
         </Card>
       </CardContainer>
@@ -100,7 +101,7 @@ const CardContainer = styled.div`
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 `;
-const Card = styled.div`
+const Card = styled.a`
   background: #1c1c1e;
   border-radius: 8px;
   display: flex;
@@ -108,6 +109,7 @@ const Card = styled.div`
   justify-content: center;
   align-items: start;
   padding: 16px;
+  text-decoration: none;
   grid-column: ${(props) => props.gridColumn};
 `;
 

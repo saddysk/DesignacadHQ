@@ -72,6 +72,7 @@ const CardSubHeading = styled.h2`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  height: 100%;
   /* or 150% */
 
   letter-spacing: 0.05em;

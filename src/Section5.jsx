@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BionicTwitterUrl, BuildByStl, SupportUsUrl } from "./Links";
 const Section5 = () => {
   return (
     <Container>
@@ -10,13 +11,13 @@ const Section5 = () => {
       <SubtextContainer>
         <Subtext>
           I built this side project as a part of my cohort at{" "}
-          <span>BuildBySTL</span>. I work on this in my spare time and it will
+          <Link href={BuildByStl} target="_blank">BuildBySTL</Link>. I work on this in my spare time and it will
           keep growing as I grow personally as a designer.
         </Subtext>
         <Subtext>
           If you find it useful you can support me{" "}
-          <span>buying me a coffee</span>, and if you have any doubts you can
-          reach out to me on <span>Twitter</span> anytime.
+          <Link href={SupportUsUrl} target="_blank">buying me a coffee</Link>, and if you have any doubts you can
+          reach out to me on <Link href={BionicTwitterUrl} target="_blank">Twitter</Link> anytime.
         </Subtext>
       </SubtextContainer>
     </Container>
@@ -33,6 +34,12 @@ const Container = styled.div`
   align-items: center;
   padding: 80px 0px;
 `;
+
+
+const Link = styled.a`
+text-decoration: none;
+color: #0a88ff;
+`
 
 const SubHeading = styled.h2`
   font-weight: 500;
