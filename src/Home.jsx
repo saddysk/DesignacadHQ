@@ -25,11 +25,12 @@ const Home = () => {
 };
 const Container = styled.div`
   @media (min-width: 1248px) and (max-width: 1440px) {
-    padding: 8px 0px;
+    padding: 0px;
   }
 
   max-width: 1248px;
   width: 100%;
   padding: 20px;
+  position: relative;
 `;
 export default Home;

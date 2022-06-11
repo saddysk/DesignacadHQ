@@ -72,6 +72,7 @@ const Container = styled.div`
   }
   width: 100%;
   min-height: 766px;
+  margin-top: 65px;
   background-image: url("hero.png");
   background-size: contain;
   background-repeat: no-repeat;

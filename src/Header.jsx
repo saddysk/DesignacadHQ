@@ -62,12 +62,21 @@ const Header = () => {
 };
 
 const Container = styled.div`
+@media (max-width: 550px) {
+  height: 40px;
+  width: 95%;
+}
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 20px; */
+  padding-right: 20px;
   color: #fff;
+  height: 65px;
+  max-width: 1248px;
+  background: black;
+  position: fixed;
+  top: 0;
 `;
 const LogoContainer = styled.div`
   display: flex;
