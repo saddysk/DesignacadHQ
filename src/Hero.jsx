@@ -35,10 +35,25 @@ const Hero = () => {
           )}
         </SubscrptionForm> */}
 
-
-        <SubscrptionForm action="https://www.getrevue.co/profile/designacadhq/add_subscriber" method="post" name="revue-form" target="_blank">
-          <Input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" />
-          <Button type="submit" name="member[subscribe]" style={{ cursor: "pointer" }}>Submit</Button>
+        <SubscrptionForm
+          action="https://www.getrevue.co/profile/designacadhq/add_subscriber"
+          method="post"
+          name="revue-form"
+          target="_blank"
+        >
+          <Input
+            class="revue-form-field"
+            placeholder="Your email address..."
+            type="email"
+            name="member[email]"
+          />
+          <Button
+            type="submit"
+            name="member[subscribe]"
+            style={{ cursor: "pointer" }}
+          >
+            Submit
+          </Button>
           {width > 995 && (
             <Subtext>
               Subcribe to get weekly updates, design <br /> assignments &
@@ -52,14 +67,14 @@ const Hero = () => {
             Subcribe to get weekly updates, design assignments & freebies.
           </Subtext>
         )}
-        <ImageContainer>
+        {/* <ImageContainer>
           <img
             src="producthunt.png"
             alt="producthunt"
             width={250}
             style={{ margin: "20px 0" }}
           />
-        </ImageContainer>
+        </ImageContainer> */}
       </ContentContainer>
     </Container>
   );
